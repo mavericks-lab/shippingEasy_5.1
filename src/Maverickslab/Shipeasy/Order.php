@@ -29,15 +29,16 @@
         /**
          * @param APIRequester $requester
          */
-        public function __construct(APIRequester $requester, $store_api_key, $store_secret, $customer_api_key)
+//        public function __construct(APIRequester $requester, $store_api_key, $store_secret, $customer_api_key)
+        public function __construct($store_api_key, $store_secret, $customer_api_key)
         {
-            $this->customer_api_key = $customer_api_key;
-            $this->requester = $requester;
-            ShippingEasy::setPartnerApiKey(Config::get('shippingeasy.partner_api_key'));
-            ShippingEasy::setPartnerApiSecret(Config::get('shippingeasy.partner_api_secret'));
+//            $this->requester = $requester;
             ShippingEasy::setApiKey($store_api_key);
             ShippingEasy::setApiSecret($store_secret);
+            $this->customer_api_key = $customer_api_key;
             ShippingEasy::setApiBase(Config::get('shippingeasy.base_url'));
+            ShippingEasy::setPartnerApiKey(Config::get('shippingeasy.partner_api_key'));
+            ShippingEasy::setPartnerApiSecret(Config::get('shippingeasy.partner_api_secret'));
         }
 
         public function all()
