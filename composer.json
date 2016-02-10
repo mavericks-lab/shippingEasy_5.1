@@ -1,25 +1,25 @@
 {
-  "name": "maverickslab/shippingeasy",
-  "description": "",
-  "authors": [
-    {
-      "name": "SynCommerce",
-      "email": "info@syncommerceapp.com"
-    }
-  ],
-  "require": {
-    "php": ">=5.4.0",
-    "illuminate/support": "5.0.4",
-    "guzzlehttp/guzzle": "~5.2",
-    "mockery/mockery": "0.9.*"
-  },
-  "autoload": {
-    "classmap": [
-      "src/shipping_easy-php"
+    "name": "maverickslab/shippingeasy",
+    "description": "",
+    "authors": [
+        {
+            "name": "SynCommerce",
+            "email": "info@syncommerceapp.com"
+        }
     ],
-    "psr-0": {
-      "Maverickslab\\Shipeasy\\": "src/"
-    }
-  },
-  "minimum-stability": "stable"
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "guzzlehttp/guzzle": "~4.0",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/shipping_easy-php"
+        ],
+        "psr-0": {
+            "Maverickslab\\Shipeasy\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
 }
