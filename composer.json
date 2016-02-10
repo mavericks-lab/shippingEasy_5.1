@@ -9,7 +9,7 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "illuminate/support": "5.0.*",
+    "illuminate/support": "5.0.4",
     "guzzlehttp/guzzle": "~5.2",
     "mockery/mockery": "0.9.*"
   },
